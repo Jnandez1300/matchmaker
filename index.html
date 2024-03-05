@@ -12,7 +12,7 @@ max-width: 950px;
 border: 1px gray solid;
 margin: auto;
 padding: 10px;
-background-color: white;
+background-color: black;
 border-radius: 10px;
 }
 
@@ -64,21 +64,21 @@ color: white;
 </body>
 <form id="form1">
 
-<h2>Which is the best description of a variable?</h2>
-<label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Identifies a portion of a string.</label>
-<label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />A method to join strings.</label>
-<label for="var_info"><input type="radio" name="variable" value="25" id="var_info" />Allows you to store information so it can be reused throughout the program</label>
-<label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>Allows you to make a decision based on a condition.</label>
+<h2>What is your favorite genre of music?</h2>
+<label for="var_string"><input type="radio" name="variable" value="0" id="var_string" />Rap</label>
+<label for="var_join"><input type="radio" name="variable" value="0" id="var_join" />Jazz</label>
+<label for="var_info"><input type="radio" name="variable" value="25" id="var_info" />Pop</label>
+<label for="var_condition"><input type="radio" name="variable" value="0" id="var_condition"/>R&B</label>
 
-<h2>Which is the best description of the substring method?</h2>
-<label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/>Identifies a portion of a string.</label>
-<label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>A method to join strings.</label>
-<label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />Allows you to store information so it can be reused throughout the program</label>
-<label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />Allows you to make a decision based on a condition.</label>
+<h2>What car brand do you like the most?</h2>
+<label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/>Chevy</label>
+<label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>Ford</label>
+<label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />Porche</label>
+<label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />Ferrari</label>
 
 <h2>Which is the best description of concatenation?</h2>
 <label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />Identifies a portion of a string.</label>
-<label for="cat_join"><input type="radio" name="con" value="25" id="cat_join" />A method to join strings.</label>
+<label for="cat_join"><input value="25" id="cat_join" />A method to join strings.</label>
 <label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />Allows you to store information so it can be reused throughout the program</label>
 <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />Allows you to make a decision based on a condition.</label>
 
@@ -108,15 +108,16 @@ button {
 width: 100px;
 margin-top: 20px;
 }</style>
-          
-<p>Your grade is: <span id="grade">__</span></p>
+         <script> <p>Your grade is: <span id="grade">__</span></p>
 <p id="grade2"></p>
+	</script>
 <script>
 	if (result == 0) {result2 = "I don't think you studied."};
 if (result == 25) {result2 = "You need to spend more time. Try again."};
 if (result == 50) {result2 = "I think you could do better. Try again."};
 if (result == 75) {result2 = "So close. Try again."};
 if (result == 100) {result2 = "Excellent! You're a JavaScript pro!"};
+</script>
 document.getElementById("grade2").innerHTML = result2;
 document.getElementById("form1").onsubmit=function() {
        variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
@@ -128,19 +129,7 @@ document.getElementById("grade").innerHTML = result;
 return false; // required to not refresh the page; just leave this here
 } //this ends the submit function
 </script>
-
-
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </main>
+</main>
     <footer>
         <p>&copy; 2024 My Website. All rights reserved.</p>
     </footer>
