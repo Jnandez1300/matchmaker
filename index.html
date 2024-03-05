@@ -114,6 +114,24 @@ if (result == 50) {result2 = "I think you could do better.Friendzone:)."};
 if (result == 75) {result2 = "So close.I could give you the world."};
 if (result == 100) {result2 = "Excellent! Let's get married huh..?"};
 </script>
+		<script>
+document.getElementById("form1").onsubmit=function() {
+       variable = parseInt(document.querySelector('input[name = "variable"]:checked').value);
+	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
+	   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
+	   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+
+
+	   result = variable + sub + con + ifstate;
+
+	document.getElementById("grade").innerHTML = result;
+
+
+
+return false; // required to not refresh the page; just leave this here
+} //this ends the submit function
+
+</script>
 
 </main>
     <footer>
