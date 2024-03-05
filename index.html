@@ -54,10 +54,11 @@ color: white;
 </div><!-- close header div -->
 
 <h1>Matchmaker</h1>
-<p>Which is the best description of a variable?</p>
-<p>Which is the best description of the substring method?</p>
-<p>Which is the best description of concatenation?</p>
-<p>Which is the best description of an if statement?</p>
+<p>What is your favorite genre of music?</p>
+<p>What car brand do you like the most?</p>
+<p>Which food item is better?</p>
+<p>What is your dream destination?</p>
+<p>What city is the best?</p>
 
 <p>Your grade is: <span id="grade">__</span></p>
 <p id="grade2"></p>
@@ -77,19 +78,19 @@ color: white;
 <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />Porche</label>
 <label for="sub_condition"><input type="radio" name="sub" value="0" id="sub_condition" />Ferrari</label>
 
-<h2>Which is the best description of concatenation?</h2>
+<h2>Which food item is better?</h2>
 <label for="cat_string"><input type="radio" name="con" value="0" id="cat_string" />Identifies a portion of a string.</label>
-<label for="cat_join"><input value="25" id="cat_join" />A method to join strings.</label>
+<label for="cat_join"><input value="radio" id="cat_join" />A method to join strings.</label>
 <label for="cat_info"><input type="radio" name="con" value="0" id="cat_info" />Allows you to store information so it can be reused throughout the program</label>
 <label for="cat_condition"><input type="radio" name="con" value="0" id="cat_condition" />Allows you to make a decision based on a condition.</label>
 
-<h2>Which is the best description of an if statement?</h2>
+<h2>What is your dream destination?</h2>
 <label for="if_string"><input type="radio" name="ifstate" value="0" id="if_string" />Identifies a portion of a string.</label>
 <label for="if_join"><input type="radio" name="ifstate" value="0" id="if_join" />A method to join strings.</label>
 <label for="if_info"><input type="radio" name="ifstate" value="0" id="if_info" />Allows you to store information so it can be reused throughout the program</label>
 <label for="if_condition"><input type="radio" name="ifstate"  value="25" id="if_condition" />Allows you to make a decision based on a condition.</label>
 
-<h3>Which is the best description of the substring method?</h3>
+<h3>What city is the best?</h3>
 <label for="sub_string"><input type="radio" name="sub" value="25" id="sub_string"/>Identifies a portion of a string.</label>
 <label for="sub_join"><input type="radio" name="sub" value="0" id="sub_join"/>A method to join strings.</label>
 <label for="sub_info"><input type="radio" name="sub" value="0" id="sub_info" />Allows you to store information so it can be reused throughout the program</label>
@@ -113,11 +114,11 @@ margin-top: 20px;
 <p id="grade2"></p>
 	</script>
 <script>
-	if (result == 0) {result2 = "I don't think you studied."};
-if (result == 25) {result2 = "You need to spend more time. Try again."};
-if (result == 50) {result2 = "I think you could do better. Try again."};
-if (result == 75) {result2 = "So close. Try again."};
-if (result == 100) {result2 = "Excellent! You're a JavaScript pro!"};
+	if (result == 0) {result2 = "I don't think I'll call you."};
+if (result == 25) {result2 = "You need to spend more time.With me."};
+if (result == 50) {result2 = "I think you could do better.Friendzone:)."};
+if (result == 75) {result2 = "So close.I could give you the world."};
+if (result == 100) {result2 = "Excellent! Let's get married huh..?"};
 </script>
 document.getElementById("grade2").innerHTML = result2;
 document.getElementById("form1").onsubmit=function() {
