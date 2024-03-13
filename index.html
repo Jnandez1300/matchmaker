@@ -101,10 +101,10 @@ margin-top: 20px;
 <label for="steak"><input type="radio" name="con" value="0" id="steak" />steak </label>
 	
 <h5>What is your favorite food?</h4>
-<label for="tacos"><input type="radio" name="con" value="0" id="tacos"/>tacos.</label>
-<label for="pizza"><input type="radio" name="con" value="20" id="pizza"/>pizza.</label>
-<label for="beef"><input type="radio" name="con" value="0" id="beef" />beef</label>
-<label for="steak"><input type="radio" name="con" value="0" id="steak" />steak </label>
+<label for="tacos"><input type="radio" name="let" value="0" id="tacos"/>tacos.</label>
+<label for="pizza"><input type="radio" name="let" value="20" id="pizza"/>pizza.</label>
+<label for="beef"><input type="radio" name="let" value="0" id="beef" />beef</label>
+<label for="steak"><input type="radio" name="let" value="0" id="steak" />steak </label>
 
 	<button type="submit" value="Submit">Submit</button>
 
@@ -126,8 +126,9 @@ document.getElementById("form1").onsubmit=function() {
 	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
 	   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
 	   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
+	let = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
 	 
- result = ifstate + variable + sub + con + ifstate;
+ result = let + variable + sub + con + ifstate;
 
 return false; // required to not refresh the page; just leave this here
 } //this ends the submit function
