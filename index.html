@@ -80,10 +80,10 @@ margin-top: 20px;
 <label for="Rap"><input type="radio" name="variable" value="0" id="Rap" />Rap</label>
 <label for="Jazz"><input type="radio" name="variable" value="0" id="Jazz" />Jazz</label>
 <label for="Pop"><input type="radio" name="variable" value="0" id="Pop" />Pop</label>
-<label for="R&B"><input type="radio" name="variable" value="25" id="R&B"/>R&B</label>
+<label for="R&B"><input type="radio" name="variable" value="20" id="R&B"/>R&B</label>
 
 <h2>What car brand do you like the most?</h2>
-<label for="Chevy"><input type="radio" name="sub" value="25" id="Chevy"/>Chevy</label>
+<label for="Chevy"><input type="radio" name="sub" value="20" id="Chevy"/>Chevy</label>
 <label for="Ford"><input type="radio" name="sub" value="0" id="Ford"/>Ford</label>
 <label for="Porche"><input type="radio" name="sub" value="0" id="Porche" />Porche</label>
 <label for="Ferrari"><input type="radio" name="sub" value="0" id="Ferrari" />Ferrari</label>
@@ -92,16 +92,17 @@ margin-top: 20px;
 <label for="New York"><input type="radio" name="ifstate" value="0" id="New York" />New york</label>
 <label for="Milan"><input type="radio" name="ifstate" value="0" id="Milan" />Milan</label>
 <label for="Paris"><input type="radio" name="ifstate" value="0" id="Paris" />Paris</label>
-<label for="Madrid"><input type="radio" name="ifstate"  value="25" id="Madrid" />Madrid</label>
+<label for="Madrid"><input type="radio" name="ifstate"  value="20" id="Madrid" />Madrid</label>
 
 <h4>What is your favorite food?</h4>
 <label for="tacos"><input type="radio" name="con" value="0" id="tacos"/>tacos.</label>
-<label for="pizza"><input type="radio" name="con" value="25" id="pizza"/>pizza.</label>
+<label for="pizza"><input type="radio" name="con" value="20" id="pizza"/>pizza.</label>
 <label for="beef"><input type="radio" name="con" value="0" id="beef" />beef</label>
 <label for="steak"><input type="radio" name="con" value="0" id="steak" />steak </label>
-	<h5>What is your favorite food?</h4>
+	
+<h5>What is your favorite food?</h4>
 <label for="tacos"><input type="radio" name="con" value="0" id="tacos"/>tacos.</label>
-<label for="pizza"><input type="radio" name="con" value="25" id="pizza"/>pizza.</label>
+<label for="pizza"><input type="radio" name="con" value="20" id="pizza"/>pizza.</label>
 <label for="beef"><input type="radio" name="con" value="0" id="beef" />beef</label>
 <label for="steak"><input type="radio" name="con" value="0" id="steak" />steak </label>
 
@@ -125,10 +126,8 @@ document.getElementById("form1").onsubmit=function() {
 	   sub = parseInt(document.querySelector('input[name = "sub"]:checked').value);
 	   con = parseInt(document.querySelector('input[name = "con"]:checked').value);
 	   ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
-	 ifstate = parseInt(document.querySelector('input[name = "ifstate"]:checked').value);
-
-
-	   result = ifstate + variable + sub + con + ifstate;
+	 
+ result = ifstate + variable + sub + con + ifstate;
 
 return false; // required to not refresh the page; just leave this here
 } //this ends the submit function
