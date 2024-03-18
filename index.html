@@ -59,10 +59,10 @@ margin-top: 20px;
     <main>
         <article>
             <body>
-<div id="main"><!-- open main div -->
-<div id="header"><!-- open header div -->
+<div id="main">
+<div id="header">
 <h1>Matchmaker Quiz</h1>
-</div><!-- close header div -->
+</div>
 
 <h1>Matchmaker</h1>
 <p>What is your favorite genre of music?</p>
@@ -73,7 +73,7 @@ margin-top: 20px;
 
 <p>Your grade is: <span id="grade">__</span></p>
 <p id="grade2"></p>
-</div><!-- close main div -->
+</div>
 </body>
 <form id="form1">
 
@@ -132,8 +132,8 @@ if (result == 60) {result2 = "I think you could do better.Friendzone:)."};
 if (result == 80) {result2 = "So close.I could give you the world."};
 if (result == 100) {result2 = "Excellent! Let's get married huh..?"};
 	document.getElementById("grade").innerHTML = result + ' ' + result2;
-	return false; // required to not refresh the page; just leave this here
-} //this ends the submit function
+	return false; 
+} 
 
 		</script>
 
